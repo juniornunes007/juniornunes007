@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <style>
+        title {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a2e4f5;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background: #4fb9cc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+    </style>
+</head>
+<body>
+    <form action="vagas.php" method="post"> 
+        <div>
+            <label for="titulo">titulo:
+                <input type="text" id="titulo" name="titulo" placeholder="">
+            </label>
+        </div>
+        <div>
+        <label for="Descricao"> Descrição:
+            <input type="text" id="Descricao" name="Descricao" placeholder="Descrição">
+        </label>
+    </div>
+    <div>
+        <label for="salario"> salario
+            <input type="number" id="salario" name="salario" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label for="localizacao">Localização
+            <input type="text" id="localizacao" name="localizacao" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label for="data_publicasao">Data da publicasão 
+            <input type="date" id="date_publicasao" name="data_publicasao" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label for="status_vaga">status
+            <input type="text" id="status_vaga" name="status_vaga" placeholder="">
+        </label>
+    </div>
+    <button type="submit" value="Cadastrar"> cadastrar</button>
+    </form>
+</body>
+</html>
