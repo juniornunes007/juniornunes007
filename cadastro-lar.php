@@ -38,7 +38,7 @@ if (
     $resultadoCliente = mysqli_query($conexao, $resultSqlCliente);
  
     if (mysqli_insert_id($conexao)){
-        $_SESSION['msg'] = "<p> Cliente Cadastrado com Sucesso</p>";
+        header("location: consulta.php");
     }
     else{
         $_SESSION['msg'] = "<p> Cliente não Cadastrado</p>";

@@ -23,7 +23,7 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
         $usuario = mysqli_fetch_assoc($resultadoLogin);
         $_SESSION['cpf'] = $usuario['cpf'];
         $_SESSION['senha'] = $usuario['senha'];
-        header("Location: homePage.html");
+        header("Location: principalvagas.html");
     } else {
         // CPF ou senha incorretos
         $_SESSION['msg'] = "CPF ou senha incorretos.";
